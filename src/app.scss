@@ -1,0 +1,29 @@
+@import './global.scss';
+
+
+.app {
+    height: 100vh;
+    
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - #{$topbar_height});  
+        background: $neutralColor;
+        position: relative;
+        top: $topbar_height;
+
+        // scroll snap to topbar & display none
+        scroll-snap-type: y mandatory;;
+        scroll-behavior: smooth;
+        scrollbar-width: none; // for firefox
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        > * {
+            width: 100%;
+            height: calc(100vh - #{$topbar_height});  
+            scroll-snap-align: start;
+        }
+    }
+}

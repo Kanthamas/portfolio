@@ -1,0 +1,112 @@
+@import "../global.scss";
+
+.contact {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: hidden;
+	position: relative;
+	background: $compColor;
+	color: $mainColor;
+
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-between;
+	}
+
+	.contact-container {
+		background: $subCompColor;
+
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
+		overflow-y: auto;
+
+		h1 {
+			font-family: inherit;
+			font-style: italic;
+			font-size: 4.5em;
+			font-weight: 600;
+			text-align: center;
+			position: absolute;
+			margin-top: 0.5em;
+
+			@include mobile {
+				font-size: 3.5em;
+				margin-top: 0.25em;
+				color: $compColor;
+			}
+		}
+
+		.wrapper {
+			position: absolute;
+			width: 100vw;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 10em;
+			overflow: hidden;
+
+			@include mobile {
+				flex-direction: column;
+				margin-top: 5rem;
+			}
+
+			.left-text {
+				display: flex;
+				height: 100%;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				padding-right: 2rem;
+
+				@include mobile {
+					padding-right: 1rem;
+					margin-top: 1em;
+				}
+
+				.text {
+					text-align: right;
+
+					h2 {
+						font-size: 3rem;
+						font-weight: 600;
+						font-family: "Dancing Script";
+					}
+
+					h3,
+					p {
+						margin-top: 5px;
+						text-align: right;
+						font-weight: 400;
+						font-size: 1.2rem;
+						font-style: italic;
+
+						@include mobile {
+							text-align: center;
+							margin-bottom: 5px;
+						}
+					}
+				}
+
+				.btn {
+					margin: 2rem;
+
+					@include mobile {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

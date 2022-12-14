@@ -1,0 +1,74 @@
+@import "../global.scss";
+
+.side-menu {
+    width: 300px;
+    height: 100vh;
+    color: $subMainColor;
+    background: hsla(0, 0%, 100%, 0.1);
+    
+    position: fixed;
+    top: $topbar_height;
+    right: -300px;
+    z-index: 9;
+    border-left: 1px solid rgba($color: $subCompColor, $alpha: 0.5);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 1s ease-in;
+    backdrop-filter: blur(1rem);
+
+    &.active {
+        right: 0;
+
+    }
+    
+    @include mobile {
+        
+        .side-menu, &.active {
+            width: 50px;
+        }
+        span {
+            display: none;
+        }
+        .btn-resume {
+            display: none;
+        }
+    }
+    .list {
+        margin-top: 7rem;
+    }
+    a, &.active,.icon {
+        color: $subMainColor;
+        text-decoration: none;
+
+    }
+
+    a:hover, &.active:hover,.icon:hover {
+        color: $neutralColor;
+        text-decoration: none;
+
+    }
+    
+    a {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon, span {
+        font-size: 1.5rem;
+    }
+    
+    span {
+        margin-left: 1rem;
+    }
+
+    li:hover {
+        scale: 1.05;
+        color: $neutralColor;
+        
+    }
+
+}

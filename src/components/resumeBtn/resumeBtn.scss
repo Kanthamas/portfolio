@@ -1,0 +1,57 @@
+@import '../../global.scss';
+
+.btn {
+    position: relative;
+   
+    padding: 0.5rem 1.5rem;
+    background: rgba($color: $mainColor, $alpha: 0.0);
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    color: $subCompColor;
+    cursor: pointer;
+
+    &::before {
+    content: "";
+    position: absolute;
+    inset: -3px 0px;
+    
+    background: linear-gradient(315deg, $neutralColor, transparent 95%);
+    transition:  0.6s;
+    animation: animate 6s linear infinite; 
+    }
+
+    &:hover::before {
+        inset: -10px 0px;
+
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }  
+        0% {
+            transform: rotate(360deg);
+        }      
+    }
+
+    &::after {
+        content: "Download Resume";
+        inset: 3px;
+        z-index: 1;
+       
+        position: absolute;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(11rem -5%);
+        height: calc(2.5rem -5%);
+        padding: 0.5rem 1.5rem;
+        background: $mainColor;
+        border-radius: 4px;
+        box-shadow: 0px 0px 5px rgba($color: $mainColor, $alpha: 0.4);
+    }
+}
+
+
+

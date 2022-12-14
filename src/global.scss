@@ -1,0 +1,18 @@
+$mainColor: hsl(60, 3%, 6%);
+$subMainColor: hsl(90, 1%, 38%);
+//$neutralColor: hsl(190, 42%, 67%);
+$neutralColor: hsl(16, 100%, 50%);
+$subCompColor: hsl(210, 28%, 87%);
+$compColor: hsl(203, 57%, 97%);
+
+$topbar_height: 70px;
+$topbar_position: fixed;
+
+
+$width: 768px;  // mobile 414px, tablet 768px
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

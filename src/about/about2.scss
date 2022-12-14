@@ -1,0 +1,83 @@
+@import '../global.scss';
+
+.about {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    // background-image: url('../assets/about-bg.png');
+    color: $subMainColor;
+    background: $subCompColor;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+
+    .section_title{
+        text-align: center;
+        font-style: italic;
+        font-size: 4em;
+        font-weight: 600;
+        padding: 0.5em 0;
+      
+    }
+   
+    .about_container {
+        max-width: 768px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    .about_tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .about_btn {
+        font-size: 1.6em;
+        font-weight: 500;
+        color: inherit;
+        margin: 0 0.8em;
+        cursor: pointer;
+      
+
+        &:hover {
+            color: $mainColor;
+        }
+    }
+
+    .about_icon {
+      
+        margin-right: 0.25em;
+    }
+    
+    .about_active {
+        color: $mainColor;
+    }
+
+    .about_sections {
+        display: grid;
+        grid-template-columns: 0.5fr;
+        justify-content: center;
+    }
+
+    .about_content {
+        display: none;
+    }
+
+     .about_content-active {
+        display: block;
+    }
+
+    about_data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5em;
+    }
+
+}

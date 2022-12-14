@@ -1,0 +1,95 @@
+@import '../global.scss';
+
+.card {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100px *3);
+    height: calc(162px *3);
+    
+
+    .card-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        overflow: hidden;
+        width: calc(100px *3);
+        height: calc(162px *3);
+        color: $mainColor;
+        background: hsla(0, 0%, 100%, 0.1);
+        border-radius: 16px;
+        border: 1px solid $subMainColor;
+        
+        backdrop-filter: blur(1rem);
+        padding: 1.5em 2em;
+
+        .card-header {
+            flex: 0.2;
+            width: 100%;
+            background: transparent;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                color: $compColor;
+                font-size: 1.5em;
+                font-weight: 600;
+                font-style: italic;
+                text-align: center;
+                padding: 0.2em 0;
+                line-height: 1.1;
+            }
+
+        }
+
+        .card-content {
+            flex: 0.7;
+            width: 100%;
+            background: transparent;
+            padding-top: 1em;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: $compColor;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+             .icon {
+                color: $mainColor;
+                margin-top: 0.5em;
+                font-size: 2em;
+                text-decoration: none;
+            
+                
+            }
+            
+
+        }
+
+        .card-footer {
+            flex: 0.1;
+            width: 100%;
+            background: transparent;
+            padding-top: 1em;
+            overflow: hidden;
+
+            p {
+                color: $compColor;
+                font-size: 1em;
+                font-weight: 300;
+            }
+        }
+    }
+}

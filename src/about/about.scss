@@ -1,0 +1,69 @@
+@import "../global.scss";
+
+.about {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background: $compColor;
+	color: $subMainColor;
+
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-between;
+	}
+
+	.about-container {
+		background: $subCompColor;
+
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
+		overflow-y: auto;
+
+		h1 {
+			font-family: inherit;
+			font-style: italic;
+			font-size: 4.5em;
+			font-weight: 600;
+			text-align: center;
+			position: absolute;
+			margin-top: 0.5em;
+
+			@include mobile {
+				font-size: 4em;
+			}
+		}
+
+		.wrapper {
+			position: absolute;
+			width: 100vw;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 10em;
+			overflow-y: auto;
+
+			&::-webkit-scrollbar {
+				color: $mainColor;
+			}
+
+			@include mobile {
+				flex-direction: column;
+				width: 100%;
+				overflow-y: auto;
+			}
+		}
+	}
+}
