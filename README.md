@@ -4,4 +4,7 @@ ___
 
 ### Final Group Project: [EliteMove](https://elitemove-ui.vercel.app/)
 #### Sports Tracking Web Applicaiton using MERN stack
-#### [Code](https://github.com/JSD3G6)
+#### [GitHub Repo](https://github.com/JSD3G6)
+
+### Landing page
+![image](https://user-images.githubusercontent.com/114124443/209471934-20b96d54-b937-474f-9f3c-c242befea3aa.png)
