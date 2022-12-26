@@ -6,5 +6,9 @@
 #### Sports Tracking Web Applicaiton using MERN stack
 #### [GitHub Repo](https://github.com/JSD3G6)
 
-### Landing page
+#### Landing page
 ![image](https://user-images.githubusercontent.com/114124443/209471934-20b96d54-b937-474f-9f3c-c242befea3aa.png)
+
+#### Dashboard
+![image](https://user-images.githubusercontent.com/114124443/209518835-30bb8659-e47a-4abd-b4ee-1a72dcec0fb8.png)
+
