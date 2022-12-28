@@ -30,7 +30,7 @@
 
 		overflow-y: auto;
 
-		h1 {
+		.about-title {
 			font-family: inherit;
 			font-style: italic;
 			font-size: 4.5em;
@@ -40,7 +40,9 @@
 			margin-top: 0.5em;
 
 			@include mobile {
-				font-size: 4em;
+				font-size: 3em;
+				// position: sticky;
+				// top: calc($topbar_height + 5em);
 			}
 		}
 

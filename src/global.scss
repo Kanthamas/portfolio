@@ -8,10 +8,10 @@ $compColor: hsl(203, 57%, 97%);
 $topbar_height: 70px;
 $topbar_position: fixed;
 
-$width: 768px; // mobile 414px, tablet 768px
+$maxwidth: 768px; // mobile 414px, tablet 768px
 
 @mixin mobile {
-	@media (max-width: #{$width}) {
+	@media (max-width: #{$maxwidth}) {
 		@content;
 	}
 }

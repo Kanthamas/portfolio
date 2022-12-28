@@ -3,9 +3,9 @@ import Card01 from "../components/card01/Card01";
 
 const About = () => {
 	return (
-		<div className='about ' id='about'>
+		<div className='about' id='about'>
 			<div className='about-container'>
-				<h1>{`<AboutMe />`}</h1>
+				<h1 className="about-title">{`<AboutMe />`}</h1>
 				<div className='wrapper'>
 					<Card01
 						year={1980}

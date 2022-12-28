@@ -40,7 +40,7 @@
 			margin-top: 0.5em;
 
 			@include mobile {
-				font-size: 3.5em;
+				font-size: 3em;
 				margin-top: 0.25em;
 				color: $compColor;
 			}
@@ -68,11 +68,12 @@
 				flex-direction: column;
 				justify-content: space-between;
 				align-items: center;
-				padding-right: 2rem;
+				// padding-right: 2rem;
 
 				@include mobile {
-					padding-right: 1rem;
+					padding: 0;
 					margin-top: 1em;
+					padding-right: 1rem;
 				}
 
 				.text {
@@ -82,6 +83,11 @@
 						font-size: 3rem;
 						font-weight: 600;
 						font-family: "Dancing Script";
+
+						@include mobile {
+							font-size: 2rem;
+							padding: 0 1rem;
+						}
 					}
 
 					h3,
@@ -93,7 +99,9 @@
 						font-style: italic;
 
 						@include mobile {
-							text-align: center;
+							font-size: 0.8rem;
+							padding: 0 1rem;
+							margin-right: 1rem;
 							margin-bottom: 5px;
 						}
 					}
@@ -106,6 +114,9 @@
 						display: none;
 					}
 				}
+			}
+
+			.right-box-contact {
 			}
 		}
 	}

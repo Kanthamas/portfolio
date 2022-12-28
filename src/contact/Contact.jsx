@@ -18,8 +18,10 @@ const Contact = () => {
 							<ResumeBtn />
 						</div>
 					</div>
-
-					<ContactCard className='contactCard' />
+					<div className='right-box-contact'>
+						<ContactCard className='contactCard' />
+					</div>
+					
 				</div>
 			</div>
 		</div>

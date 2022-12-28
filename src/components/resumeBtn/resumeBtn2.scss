@@ -25,6 +25,11 @@ a {
 		scale: 1.05;
 	}
 
+	@include mobile {
+		width: 7rem;
+		font-size: 0.8rem;
+	}
+
 	&::before {
 		content: "";
 		background-image: conic-gradient(
