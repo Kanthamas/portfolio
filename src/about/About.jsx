@@ -48,7 +48,7 @@ const About = () => {
 						year={2014}
 						location={`Lampang, Thailand`}
 						title={`Math, Science and English Tutor`}
-						p1={`Taught students how to learn and unleash their potential`}
+						p1={`Taught students how to learn and how to unleash their potential`}
 						p2={`Understood and embraced the diversity of human beings`}
 					/>
 					<Card01

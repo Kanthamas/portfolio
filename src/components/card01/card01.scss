@@ -7,6 +7,12 @@
 	justify-content: center;
 	align-items: center;
 	overflow-y: hidden;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+
+	@include mobile {
+		margin-top: 1rem;
+	}
 }
 .card {
 	//position: relative;
