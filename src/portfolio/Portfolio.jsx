@@ -15,13 +15,13 @@ const Portfolio = () => {
 				<div className='wrapper'>
 					<div className='main-card'>
 						<div className='left-card'>
-							<a href={EliteMoveLP} target='_blank' rel='noreferrer'>
-								<img src={EliteMoveLP} alt='EliteMove Landing Page' />
+							<a className="img-landingPage" href={EliteMoveLP} target='_blank' rel='noreferrer'>
+								<img  src={EliteMoveLP} alt='EliteMove Landing Page' />
 							</a>
-							<a href={EliteMoveDashboard} target='_blank' rel='noreferrer'>
+							<a className='img-dashboardPage' href={EliteMoveDashboard} target='_blank' rel='noreferrer'>
 								<img src={EliteMoveDashboard} alt='EliteMove Dashboard Page' />
 							</a>
-							<a href={EliteMoveEditProfile} target='_blank' rel='noreferrer'>
+							<a className='img-editProfilePage' href={EliteMoveEditProfile} target='_blank' rel='noreferrer'>
 								<img
 									src={EliteMoveEditProfile}
 									alt='EliteMove Edit Profile Page'
@@ -32,7 +32,7 @@ const Portfolio = () => {
 							<div className='right-card-title'>
 								<img src={EliteMoveLogo} alt='Elite Move' />
 								<a href='https://elitemove-ui.vercel.app' target='blank'>
-									<h2>EliteMove</h2>
+									<h2 className='eliteMove'>EliteMove</h2>
 								</a>
 								{/* https://github.com/JSD3G6 */}
 							</div>

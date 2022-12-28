@@ -57,6 +57,7 @@
 
 			@include mobile {
 				flex-direction: column;
+				margin-top: 7rem;
 			}
 
 			.main-card {
@@ -89,10 +90,19 @@
 						object-fit: cover;
 						padding: 0.25rem 1rem;
 						overflow: hidden;
+
+						@include mobile {
+							padding: 0.5rem;
+						}
 					}
 
 					@include mobile {
 						overflow-y: hidden;
+
+						.img-landingPage,
+						.img-editProfilePage {
+							display: none;
+						}
 					}
 				}
 
@@ -106,7 +116,7 @@
 					align-items: center;
 
 					@include mobile {
-						overflow-y: hidden;
+						overflow-y: scroll;
 						font-size: 0.9rem;
 					}
 
@@ -131,12 +141,18 @@
 							width: 100%;
 							flex: 5;
 
-							h2 {
+							.eliteMove {
 								font-size: 3rem;
 								color: $mainColor;
 								font-style: italic;
 								margin-top: 1.3rem;
 								padding-left: 0.5rem;
+								cursor: pointer;
+
+								@include mobile {
+									font-size: 2rem;
+									padding: 0.5rem 1rem 0.7rem 0;
+								}
 							}
 						}
 					}
