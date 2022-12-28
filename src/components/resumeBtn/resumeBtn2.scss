@@ -28,6 +28,7 @@ a {
 	@include mobile {
 		width: 7rem;
 		font-size: 0.8rem;
+		padding: 0.3em;
 	}
 
 	&::before {

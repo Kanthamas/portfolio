@@ -25,8 +25,8 @@ const Intro = () => {
 			<div className='left'>
 				<div className='image-container'>
 					<img className='image' src={introImage} alt='everyone can code' />
-					<span className='caption'>September 19, 2022</span>
-					<p>{`<Kanthamas />`}</p>
+					<p className='caption'>#JSD3 #GenAlumni | December 28, 2022</p>
+					<p className='mylogo'>{`<Kanthamas />`}</p>
 				</div>
 			</div>
 			<div className='right'>

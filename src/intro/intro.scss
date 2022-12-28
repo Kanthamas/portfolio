@@ -35,8 +35,8 @@
 			.image {
 				width: 100%;
 
-				aspect-ratio: 2/3;
-				object-fit: cover;
+				aspect-ratio: 1/1;
+				object-fit: fill;
 				filter: saturate(50%);
 
 				@include mobile {
@@ -48,18 +48,19 @@
 			.caption {
 				margin-top: 20px;
 				text-align: center;
-				font-size: 1em;
+				font-size: 1rem;
 				font-weight: 700;
-				letter-spacing: 2px;
+				letter-spacing: 1px;
 				overflow: hidden;
-				padding: 1em;
+				padding: 1rem;
 
 				@include mobile {
-					padding-top: 0;
-					font-size: 0.8em;
+					font-size: 0.6rem;
+					font-weight: 400;
+					padding: 0.5rem;
 				}
 			}
-			p {
+			.mylogo {
 				font-family: "Dancing Script";
 				font-weight: 700;
 				font-size: 1.5em;
@@ -68,7 +69,7 @@
 
 				@include mobile {
 					padding-bottom: 0.8em;
-					font-size: 1.2em;
+					font-size: 1em;
 				}
 			}
 		}
