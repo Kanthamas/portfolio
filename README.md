@@ -1,5 +1,6 @@
 ## Junior Software Development Cohort 3 by Generation Thailand
 ### September 19 - December 28, 2022
+![image](https://user-images.githubusercontent.com/114124443/209953199-0a8179f4-f61c-43de-a9db-11d24fbc5031.png)
 
 
 ### Final Group Project: [EliteMove](https://elitemove-ui.vercel.app/)
