@@ -29,20 +29,20 @@ const ContactCard = () => {
 		<div className='contact-card' id='contact-card'>
 			<form ref={form} onSubmit={sendEmail}>
 				<div className='input-box'>
-					<input type='text' name='name' />
-					<span>Name</span>
+					<input className='input-text' type='text' name='name' required/>
+					<span className='span-text'>Name</span>
 				</div>
 				<div className='input-box'>
-					<input type='email' name='email' />
-					<span>Email</span>
+					<input className='input-text' type='email' name='email' required/>
+					<span className='span-text'>Email</span>
 				</div>
 				<div className='input-box'>
-					<input type='text' name='subject' />
-					<span>Subject</span>
+					<input className='input-text' type='text' name='subject' required/>
+					<span className='span-text'>Subject</span>
 				</div>
 				<div className='input-box'>
-					<textarea name='message' rows='7' cols='33' />
-					<span>Message</span>
+					<textarea className='input-text' name='message' rows='8' cols='35' required/>
+					<span className='span-text'>Message</span>
 				</div>
 
 				<input className='btn-submit' type='submit' value='SUBMIT' />

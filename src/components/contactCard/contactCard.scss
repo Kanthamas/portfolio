@@ -20,49 +20,48 @@
 	.input-box {
 		position: relative;
 		width: 250px;
+		overflow-y: hidden;
 
-		input,
-		textarea {
+		.input-text {
 			width: 100%;
-			padding: 10px;
+			padding: 0.5rem;
 			border: 1px solid rgba(0, 0, 0, 0.25);
 			background: transparent;
-			border-radius: 5px;
+			border-radius: 4px;
 			outline: none;
 			color: $mainColor;
-			font-size: 1em;
+			font-size: 1rem;
 			letter-spacing: 1px;
-			margin-top: 10px;
+			margin-top: 1rem;
 		}
-		span {
+		.span-text {
 			position: absolute;
-			top: 10px;
+			top: 1rem;
 			left: 0;
-			padding: 10px;
+			padding: 0.5rem;
 			pointer-events: none;
-			font-size: 1em;
+			font-size: 1rem;
 			color: $mainColor;
 			text-transform: uppercase;
 			transition: 0.5s;
 		}
 
-		input:focus ~ span,
-		textarea:focus ~ span {
+		.input-text:valid ~ .span-text,
+		.input-text:focus ~ .span-text {
 			color: $neutralColor;
-			transform: translateX(10px) translateY(-10px);
-			font-size: 0.9em;
-			padding: 0 10px;
+			transform: translateX(0.6rem) translateY(-0.6rem);
+			font-size: 0.9rem;
+			padding: 0 1rem;
 			color: $compColor;
 			background: $neutralColor;
 			border-radius: 3px;
 		}
-		input:focus,
-		textarea:focus {
+		.input-text:focus {
 			border: 1px solid $neutralColor;
 		}
 
 		@include mobile {
-			margin-top: 0.5em;
+			margin-top: 0.5rem;
 		}
 	}
 
