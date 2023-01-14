@@ -1,80 +1,80 @@
 @import "../../global.scss";
 
 a {
-	text-decoration: none;
-	overflow: hidden;
+  text-decoration: none;
+  overflow: hidden;
 }
 .btn-resume {
-	width: 11rem;
-	height: 2.5rem;
-	//padding: 0.5rem 1.5rem;
-	position: relative;
-	background: $subCompColor;
-	color: $mainColor;
-	border: none;
-	overflow: hidden;
-	cursor: pointer;
-	border-radius: 4px;
-	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+  width: 11rem;
+  height: 2.5rem;
+  //padding: 0.5rem 1.5rem;
+  position: relative;
+  background: $subCompColor;
+  color: $mainColor;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
 
-	&:hover {
-		scale: 1.05;
-	}
+  &:hover {
+    scale: 1.05;
+  }
 
-	@include mobile {
-		width: 7rem;
-		font-size: 0.8rem;
-		padding: 0.3em;
-	}
+  @include mobile {
+    width: 7rem;
+    font-size: 0.7rem;
+    padding: 0.4em;
+  }
 
-	&::before {
-		content: "";
-		background-image: conic-gradient(
-			$neutralColor 45deg,
-			$subCompColor 90deg,
-			$compColor 135deg,
-			$neutralColor 225deg,
-			$subCompColor 270deg,
-			$compColor 315deg
-		);
-		width: 500px;
-		height: 500%;
-		border-radius: 50%;
-		position: absolute;
-		overflow: hidden;
-		transform-origin: center;
-		transition: animation 2s ease;
-		animation: rotate 3s linear infinite;
-	}
+  &::before {
+    content: "";
+    background-image: conic-gradient(
+      $neutralColor 45deg,
+      $subCompColor 90deg,
+      $compColor 135deg,
+      $neutralColor 225deg,
+      $subCompColor 270deg,
+      $compColor 315deg
+    );
+    width: 500px;
+    height: 500%;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    transform-origin: center;
+    transition: animation 2s ease;
+    animation: rotate 3s linear infinite;
+  }
 
-	&::after {
-		content: "Download Resume";
-		font-family: inherit;
-		color: $compColor;
-		font-size: 1em;
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: calc(11em -3%);
-		height: calc(2.5em -3%);
-		padding: 0.7em 2em;
-		background: $mainColor;
-		border-radius: 4px;
-		box-shadow: inset 2px 2px4px $mainColor;
-	}
+  &::after {
+    content: "Download Resume";
+    font-family: inherit;
+    color: $compColor;
+    font-size: 1em;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(11em -3%);
+    height: calc(2.5em -3%);
+    padding: 0.7em 2em;
+    background: $mainColor;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px4px $mainColor;
+  }
 
-	@keyframes rotate {
-		0% {
-			transform: rotate(0deg);
-		}
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
 
-		100% {
-			transform: rotate(360deg);
-		}
-	}
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import resume from "../../assets/Kanthamas_Iamrhod_Resume.pdf";
+import resume from "../../assets/Kanthamas_Iamrhod_Resume_2023.pdf";
 import "./resumeBtn2.scss";
 
 const ResumeBtn = () => {
